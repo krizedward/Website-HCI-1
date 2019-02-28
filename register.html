@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>HCI_01 | Register</title>
+        <!--Framework Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="img/logo.png" alt="logo" style="width: 100%;">
+                </div>
+                <div class="col-12">
+                    <h1>Register</h1>
+                </div>
+                <div class="col-6">
+                    <div class="alert alert-primary" role="alert">
+                        <a href="index.html">Beranda</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="alert alert-success" role="alert">
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="negara">Asal Negara:</label>
+                            <input list="negara" required placeholder="Negara" class="form-control"/>
+                                <datalist id="negara">
+                                    <option value="Indonesia">
+                                    <option value="Malaysia">
+                                    <option value="Singapura">
+                                </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="angkaKesukaan">Angka Kesukaan:</label>
+                            <input type="number" required min="-5" max="100" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="warnaKesukaan">Warna Kesukaan:</label>
+                            <input type="color" required class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggalLahir">Tanggal Lahir:</label>
+                            <input type="date" required class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" required class="form-control"/>
+                        </div>
+                        <input type="submit" value="Daftar"/>
+                    </form>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="card-footer bg-transparent border-success" role="alert">
+                        <p>&copy; HCI01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</html>
